@@ -1,0 +1,5 @@
+transformers
+torch
+onnx
+onnxruntime
+# Add specific versions if required, e.g., torch>=1.10

@@ -1,0 +1,26 @@
+# Example Configuration for AI Autocorrect Daemon
+
+# Path to the ONNX model file
+# Replace with the actual path on your system after downloading/exporting
+model_path = "/path/to/your/model.onnx" # e.g., /home/user/.models/gpt2.onnx or ./models/model.onnx
+
+# Maximum context window size (number of tokens) the model should consider
+context_window = 128
+
+# Beam width for beam search decoding (Phase 2 feature)
+# Set to 1 for simple greedy decoding in MVP
+beam_width = 1
+
+# Whether to use a quantized model (Phase 2 feature)
+# Set to false for MVP unless you specifically export/use a quantized model
+quantization = false
+
+# Path for the UNIX domain socket for IPC communication
+# Default is usually /tmp or within a user-specific runtime directory
+socket_path = "/tmp/ai_autocorrect.sock"
+
+# (Optional) GPU device ID if multiple GPUs are present
+# gpu_device = 0
+
+# (Optional) Log level (e.g., "info", "debug", "warn", "error")
+# log_level = "info"

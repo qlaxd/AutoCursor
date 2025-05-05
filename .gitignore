@@ -1,0 +1,6 @@
+
+# Models directory
+models/
+
+# Python virtual environment
+.venv/
